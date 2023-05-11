@@ -16,3 +16,6 @@
         uppercase tracking-wider font-semibold text-sm sm:text-base;
     }
 }
+.display-none{
+    @apply hidden
+}

@@ -1,42 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body class="bg-gray-300 ">
-    <div class="bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5">
-        <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
-            <div class="xl:max-w-xl">
-            <img class="h-10" src="" alt="Workcation" />
-            <img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover
-            object-center lg:hidden" src="/beach-work.jpg" alt="Womam workcationing on the beach" />
-            <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl" >You can work from anywhere.
-                <br class="hidden lg:inline">
-            <span class="text-indigo-500">Take advantage of it.
-            </span>
-            </h1>
-            <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">Workcation helps you find work-friendly rentals in beautful locations so you
-            can enjoy some nice weather even when you're not on vacation.
-            </p>
-            <div class="mt-4 sm:mt-6">
-                <a class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 
-                focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50
-                 active:bg-indigo-600 transform transition text-white
-                uppercase tracking-wider font-semibold text-sm sm:text-base" href="#">Book your escape</a>
-                <a class="inline-block px-5 py-3 rounded-lg shadow-lg bg-gray-300 hover:bg-gray-200 hover:-translate-y-0.5 
-                focus:outline-none focus:ring focus:ring-offset-2 focus:ring-gray-300 focus:ring-opacity-50
-                 active:bg-gray-400 transform transition text-gray-800
-                uppercase tracking-wider font-semibold text-sm sm:text-base" href="#">Learn more</a>
-            </div>
-            </div>
-        </div>  
-        <div class="hidden relative lg:block 2xl:col-span-3">
-            <img class="absolute inset-0 w-full h-full object-cover object-center" src="/beach-work.jpg" alt="Womam workcationing on the beach" />
-        </div>
+  </head>
+  <body class="h-screen dark:bg-slate-900">
+    <!-- --------------------Navbar start ---------------------------- -->
+    <div
+      class="fixed top-0 z-40 flex justify-between flex-shrink-0 backdrop-blur-3xl w-full py-3 font-sans-serif text-[#37352f] scroll-smooth"
+    >
+      <div class="container flex gap-0.5 px-4 md:px-6 lg:px-56">
+        <span class="text-xl" role="img" aria-label="🌟">🌟</span>
+        <span class="justify-center py-1 text-sm">Redefine Status</span>
+      </div>
+      <button
+        role="button"
+        class="hidden gap-2 w-[68px] py-2 text-sm rounded cursor-pointer shrink-0 md:mr-10 lg:mr-60 md:flex nav-button hover:bg-gray-200 hover:justify-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="w-4 h-5"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        Search
+      </button>
     </div>
-</body>
+    <!-- ------------------------------Navbar End----------------------------------- -->
+    <!-- -----------------------------Banner page start-------------------------------- -->
+    <div class="z-10 py-2 scroll-smooth text-[#37352f] leading-relaxed">
+      <img
+        src="head.avif"
+        alt="/"
+        class="absolute object-cover w-full lg:rounded-3xl h-[216px] mt-14 lg:w-[1200px] lg:ml-40"
+      />
+
+      <div class="relative text-center py-52">
+        <span class="text-[80px]" role="img" aria-label="🌟">🌟</span>
+        <div class="mt-2 text-4xl font-semibold">Redefine Status</div>
+        <div class="px-2.5 lg:px-80">
+          <div class="flex gap-1 mt-4">
+            How We Can Correct
+            <span class="font-semibold">Mankind's Leaderboard</span>
+          </div>
+        </div>
+        <!-- --------------------------Banner page End----------------------------------------- -->
+        <!-- ---------------------Overview Start------------------------------------- -->
+        <div class="mt-8 text-left underline lg:px-80 md:p-4 px-2.5">
+          <div class="text-xl font-semibold text-red-500">
+            Overview of The Problem:
+          </div>
+        </div>
+        <div class="text-base text-left lg:px-80 px-2.5 tracking-normal">
+          <p>
+            The fact that our designer goods do not represent wealth for
+            positive utility is having more negative damage to society than we
+            can fathom. This article is going to help detail why, and detail our
+            solution in progress.
+          </p>
+          <p class="mt-5">
+            As individuals, once we cover our basic needs, status becomes an
+            intrinsic motivator in the rest of our actions. Status comes in many
+            forms. The healthiest / most enlightened cultures put the highest
+            status in rewarding positive sum behavior. In global culture, luxury
+            goods like a Gucci bag/belt have become widespread as top status
+            symbols, reflecting vapid use of money as the highest form of
+            status. It has become such common Christmas list item for broke
+            young teenagers that the richest man on the planet at the time of
+            this writing got his riches from selling these overpriced goods
+            representing nothing more than the ability to waste money.
+            Collectively this misrepresentation of true status (service to
+            others) is attributing more damage to building a healthy positive
+            culture than we can imagine.
+          </p>
+          <p class="mt-14">
+            Social media, our emergent global cultural production system, could
+            be used collectively to unify humanity around bettering ourselves
+            and others. Instead it is used to further extract youth through a
+            false form of
+            <a
+              href="https://www.eugenewei.com/blog/2019/2/19/status-as-a-service"
+              class="underline hover:no-underline underline-offset-4 bg-gradient-to-r from-red-500 via-blue-400 hover:after:underline-offset-auto to-lime-600 bg-[length:0%_2px] bg-no-repeat bg-left-bottom hover:bg-[length:100%_2px] transition-all duration-500"
+              >status as a service</a
+            >. Imagine a world where this wasteful spending was considered
+            cancelable. One where we collectively take accountability for the
+            capability to money to the positive growth of us as a species.
+            Imagine a world where the designer things we wore showed off
+            spending a lot of money to make a lot of positive impact. If the
+            world you imagined only went as far as to redistribute the wealth of
+            designer wear, try imagining the deeper cultural effects this new
+            alignment would have.
+          </p>
+          <div
+            class="block pl-4 -ml-px text-xl italic border-l-4 border-current mt-14 text-sky-500"
+          >
+            <p class="text-black">
+              “Over the past hundred years we have increase the global GDP
+              sevenfold, yet wealth inequality continues to skyrocket and luxury
+              spending grows rapidly. In order to change the failure of
+              redistribution of wealth at scale, we must effectively influence
+              culture and help redefine what “status” is in the modern age. This
+              will ultimately change the flow of money in society as the new age
+              of status being helping the world, becomes more prominent. We have
+              failed at building a society which healthily distributes
+              wealth/power. Given society is a collective project we are
+              responsible for, we think this stems from the culture not
+              supporting doing good as the highest form of status. We have more
+              than enough resources, but many people without access to them, and
+              a culture that motivates and glorifies overspending on vanity
+              luxury goods.” -
+              <a
+                href="https://jackjay.io/"
+                class="underline hover:no-underline underline-offset-4 bg-gradient-to-r from-red-500 via-blue-400 hover:after:underline-offset-auto to-lime-600 bg-[length:0%_2px] bg-no-repeat bg-left-bottom hover:bg-[length:100%_2px] transition-all duration-500"
+                >Jack Jay</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- --------------------------Overview End--------------------------------------------- -->
+        <!----------------------------------- Deeper Start------------------------------------------ -->
+        <div class="mt-14 text-left underline lg:px-80 md:p-4 px-2.5">
+          <div class="text-xl font-semibold text-blue-900">A Deeper Drive:</div>
+        </div>
+        <div class="mt-3 text-left lg:px-80 md:p-4 px-2.5">
+          <p>
+            On a fundamental level once someone gets the basics covered as in
+            food, water, shelter. They can start to spend their time and money
+            on convenience, health, and purpose but more often than not; status
+            is where a majority of surplus wealth goes.
+          </p>
+          <p class="mt-14">
+            Societally we lack an alignment of our status symbols with creating
+            a better world and with bettering ourselves. This idea to change
+            what we cultural see as status has been referred to as “Status
+            Engineering”.
+          </p>
+          <p class="mt-14">
+            What we wear is the most direct way we have to represent ourselves
+            and our ideals/values. What your role model wears, or any person of
+            influence is shaping the idea of status in that child, teenager, or
+            adults mind.
+          </p>
+          <p class="font-semibold mt-14">
+            Status is what we are buying when we pay $1, $10, or even $500 extra
+            for a certain brand of T-Shirt irrespective of comfort.
+          </p>
+          <p class="mt-20">
+            The problem is not that buying status is a failure mode of an
+            individual. Status is a form of positive competitive drive in
+            society and a tool for respect attribution. That’s why you see Dior
+            shoes in economy. This is not a miscalculation, currently the status
+            from spending $1100 on shoes does have more long term value than
+            things like first class because we are playing the game of
+            unenlightened capitalism.
+          </p>
+          <p class="mt-5">
+            The problem is that we support the status symbol which costs $1100
+            and does no good for humanity. Thus this expenditure is not a
+            failure of the buyer who bought status, it is only misguided that we
+            do not have designer shoes that cost $1100, which builds a literal
+            house in Bangladesh (a small home can be built as a permanent
+            structure for someone for this amount). We need higher forms of
+            status to exist in order to progress our culture which will aid in
+            the distribution of wealth and power on a systemic level.
+          </p>
+          <p class="mt-14">
+            Once higher status objects are unveiled will these purely financial
+            status seems become recognized for their tackiness and buying status
+            will coincide with doing good. With no better alternative currently,
+            we idolize symbols of wealth. Thus, on our highest display of who we
+            are, <a class="font-semibold">the clothing we wear</a>, we display 0
+            creativity or care for the world in spending and instead promote
+            wasting wealth for the sake of power/leverage over others, and then
+            we wonder why society is misaligned to building a healthy world.
+            Fashion, what we wear, is the biggest signal we have in representing
+            our identity and values.
+          </p>
+          <p class="mt-12">
+            If we can provide a better representation of status in clothing we
+            can not only change the money used to buy status into doing good for
+            the world, but we can change our core representation of status in
+            society towards doing good.
+          </p>
+          <p class="mt-14">
+            While the larger belief is that this systemic change is the real
+            impact in realigning our culture towards true status, the amount of
+            funds in status spending that could be redirected towards positive
+            causes is also no joke.
+          </p>
+          <div
+            class="block pl-4 -ml-px text-xl italic border-l-4 border-current mt-14 text-sky-500"
+          >
+            <p class="text-black">
+              The personal luxury goods market is projected to grow from USD
+              <a
+                href="https://www.fortunebusinessinsights.com/luxury-goods-market-103866"
+                class="underline hover:no-underline underline-offset-4 bg-gradient-to-r from-red-500 via-blue-400 hover:after:underline-offset-auto to-lime-600 bg-[length:0%_2px] bg-no-repeat bg-left-bottom hover:bg-[length:100%_2px] transition-all duration-500"
+                >257.26 billion in 2020 to USD 352.84 billion in 2027</a
+              >
+            </p>
+          </div>
+          <div
+            class="block pl-4 -ml-px text-xl italic border-l-4 border-current mt-14 text-sky-500"
+          >
+            <p class="text-black">
+              The Luxury Cars Market size is expected to grow from
+              <a
+                href="https://www.globenewswire.com/en/news-release/2022/09/19/2518123/0/en/Luxury-Cars-Market-Size-Worth-USD-655-0-Billion-Globally-by-2027-at-9-3-CAGR.html#:~:text=The%20Luxury%20Cars%20Market%20size,9.3%25%20from%202020%20to%202027.&text=Pune%2C%20India%2C%20Sept.,by%20the%20end%20of%202027."
+                class="underline hover:no-underline underline-offset-4 bg-gradient-to-r from-red-500 via-blue-400 hover:after:underline-offset-auto to-lime-600 bg-[length:0%_2px] bg-no-repeat bg-left-bottom hover:bg-[length:100%_2px] transition-all duration-500"
+                >USD 449.7 Billion in 2019 to USD 655.0 Billion by 2027; It is
+                estimated to grow at a CAGR of 9.3% from 2020 to 2027.</a
+              >
+            </p>
+          </div>
+          <p class="mt-14">
+            Aligning status culturally on a global scale means reattributing
+            that wealth towards benefit for humanity and shifting the entire
+            global view of wealth.
+          </p>
+        </div>
+        <!-- --------------------------------------Deeper End-------------------------------------------- -->
+        <!-------------------------------------- Simple solution Start------------------------------- -->
+        <div class="mt-16 text-left underline lg:px-80 md:p-4 px-2.5">
+          <div class="text-xl font-semibold text-blue-800">
+            The Simple Solution
+          </div>
+        </div>
+        <div class="mt-4 text-left lg:px-80 md:p-4 px-2.5">
+          <p class="font-semibold">
+            Thought experiments make it obvious that this idea is memetic, and
+            just has not been tried in the market. Once one initial company
+            opens up this model, many more will follow and copy:
+          </p>
+          <p class="mt-5">
+            For the same price as a Louie Vuitton bag, a permanent shelter can
+            be built in Bangladesh for a family in need. This gives rise to the
+            idea that anytime someone walks into a designer store and purchased
+            an item, they are having to burn down a house (most making this
+            decision unknowingly).
+          </p>
+          <p class="mt-12">
+            Based on the principle “if a penny saved is a penny earned” we can
+            extrapolate that to a Louie bag is a home burned. But just telling
+            someone not to flex is not going to solve the problem. If we really
+            want to win this war, we just need to sell higher status, for the
+            same price.
+          </p>
+          <img src="web.avif" alt="/" class="mt-16" />
+          <p class="mt-16">
+            Imagine trying to connect with a luxury purse buyer as protestors
+            outside of a designer store. Rather than simply protesting their
+            spending on that good, we need to sell them a better version of what
+            they are buying.
+          </p>
+          <p class="mt-14">
+            Protests outside of stores that sell meat where stands are set up
+            showing customers videos of the harmed animals may not be a great
+            way to connect with the target audience, and often cause a greater
+            divide in mindsets.
+          </p>
+          <p class="mt-12">
+            In this case volunteers or employees could stand outside of luxury
+            goods markets, sporting the aligned luxury merch. Rodeo drive for
+            example is a notorious spot where every designer store not only has
+            a shop, but theres a steady flow of customers.
+          </p>
+          <p class="mt-14">
+            Social media accounts devoted to making content here are already
+            massively viral amassing hundreds of millions of views interviewing
+            buyers. Each successful conversion, would make for a viral video and
+            an ad set, bringing potentially thousands of new customers while
+            kickstarting educating the world of the low status of wasteful
+            spending now that a better alternative exists.
+          </p>
+        </div>
+        <!---------------------------------- Simple Solution End------------------------------------- -->
+        <!-- --------------------------------Large Scale Start--------------------------------- -->
+        <div class="mt-16 text-left lg:px-80 underline md:p-4 px-2.5">
+          <div class="text-xl font-semibold text-red-500">
+            Large Scale Cultural Engineering
+          </div>
+        </div>
+        <div class="px-2.5 md:p-4 lg:px-80 mt-4 font-semibold text-start">
+          Making Altruism Culturally High Status.
+        </div>
+        <div class="mt-5 text-left lg:px-80 md:p-4 px-2.5">
+          <p>
+            Ultimately, the more projects that promote this new line of
+            thinking, the more people think others think this way, the more
+            status will align culturally with its true nature. Watching others
+            do good for the world has always given us more hope for humanity. We
+            believe the flippening of status has the potential to solve the
+            worlds greatest cause of poverty, the failed distribution of wealth
+            worldwide.
+          </p>
+          <p class="mt-14">
+            We don’t need to enforce rules where people are forced to give up
+            their things, we need brands that invest in education for the masses
+            to wake up to what real status/value is and place higher
+            alternatives into the market.
+          </p>
+          <p class="mt-12">
+            With the release of more and more globally disruptive technology,
+            anxiousness about our focus on making sure things goes right becomes
+            more apparent. By educating the world on alignment of using money
+            and power for good from the most basic layer of apparel we will
+            begin to cause this shift. With the right priming, a large amount of
+            legacy wealth will be funneled into shifting the global workforce
+            into focusing on the worlds greatest problems.
+          </p>
+        </div>
+        <!-- -------------------------------Large Sclae End---------------------------------------- -->
+        <!-- -------------------------------Bringing Start---------------------------------- -->
+        <div class="mt-14 text-left underline lg:px-80 md:p-4 px-2.5">
+          <div class="text-xl font-semibold text-slate-500">
+            Bringing The Inevitable Future Forward
+          </div>
+        </div>
+        <div class="mt-5 text-left lg:px-80 md:p-4 px-2.5">
+          <p>
+            There’s a vibe shift underway, as we get closer and closer to a post
+            scarcity economy, the eternal currency of the future of good karma
+            will become more clear.
+          </p>
+          <p class="mt-5">
+            For the greedy who still wish to hold on to ownership of something
+            land is going to skyrocket as an asset, ownership on plots of earth
+            will be seen as one of the steadiest investments as we approach a
+            hyper decrease in the cost of building.
+          </p>
+          <p class="mt-12">
+            The people who recognize this shift will do well to mortgage their
+            house, buying a larger plot of land somewhere.
+          </p>
+          <p class="mt-14">
+            If super-intelligence is democratic, honoring that ownership of land
+            will be a decision the world makes. (Clearly the idea that those who
+            hoarded their wealth and tried to hold on to value should have more
+            value than those who put their wealth to work, giving up their
+            assets, is one that will be a hard attempt) Propaganda for people to
+            relinquish their assets to funds more of the poverty of the world
+            will help the world make this decision when the time comes.
+          </p>
+          <p class="mt-14">
+            While theres no specific data for what defines “Luxury” housing,
+            this is of course a
+            <a
+              href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate.html#:~:text=The"
+              class="underline hover:no-underline underline-offset-4 bg-gradient-to-r from-red-500 via-blue-400 hover:after:underline-offset-auto to-lime-600 bg-[length:0%_2px] bg-no-repeat bg-left-bottom hover:bg-[length:100%_2px] transition-all duration-500"
+              >far larger asset class </a
+            >which outshines the luxury car and luxury goods market.
+          </p>
+          <p class="mt-14">
+            What actually makes one house better than the other (often its
+            simply the status it has rather than utility) if it was all about
+            utility people would buy the cheaper house and install the heated
+            seat toilets, and floors etc. (but then how would people respect
+            them more?). What if we were not ranked by the size of our house,
+            but instead by the size of our donations.
+          </p>
+          <p class="mt-14">
+            You may remember that app that was $999 called “Im rich” and did
+            nothing. That’s what designer clothing represents today. Useless
+            expense for materials with patterns that represent pure vanity. Pure
+            spending power gone to pure status.
+          </p>
+          <p class="mt-5">
+            It is tasteless…. and we believe society is not only waking up to
+            that fact, but it is inevitable that we will create better
+            alternatives.
+          </p>
+          <p class="mt-6">
+            In a subjective culture sense we see IN-YOUR-FACE luxury style goods
+            declining while a push for understated looks are coming forward.
+            Brands such as Gucci are being seen as more oversaturated, and
+            pieces that lack design besides the plastery of the luxury logo on
+            the piece are seen as tacky.
+          </p>
+          <p class="py-5">Evidence of this:</p>
+          <div>
+            <div>Brands like Gucci are becoming less hip.</div>
+            <div>Designer brands that are in your face are not it.</div>
+          </div>
+          <p class="mt-5">Designer that’s low-key is now the trend.</p>
+          <p class="mt-5">
+            Designer is dialing back as consumers replace spending to these
+            models.
+          </p>
+          <p class="mt-14">
+            We believe the changing of status starting at a clothing level will
+            cause one of the largest wealth flow transfers towards good for the
+            world. Imagine an individual who is struggling to provide for
+            themselves, eventually however, they begin to thrive. They start a
+            business and after having major success exit for a few million
+            dollars. What is the standard look and lifestyle of this person
+            after this event?
+          </p>
+          <p class="mt-14">
+            For the most part, most people are living to keep their “social
+            survival mammoth” feeling good. This is the part of the brain which
+            feeds off of status, which defines our place in the social
+            hierarchy. And this is not something I believe we can change, people
+            WILL naturally compete to go up the chain of the social hierarchy,
+            people want to outdo each other, people are competitive, people are
+            different and respect should be given where it is due.
+          </p>
+          <p class="mt-12">
+            This climb, this fight up the ladder is not inherently bad, what's
+            wrong right now is what we consider to be markers of people who are
+            higher up that ladder. We have been sold a narrative by the luxury
+            and designer corporations, who have massive budgets to win the
+            celebrities over, that designer and luxury clothing IS high status.
+            Those who spend $4k on a designer bag versus one of equivalent
+            quality for $50 are put higher on the status scale. If we can
+            collectively redefine this status symbol as tacky, which has already
+            been changing for in-your-face luxury design brand styles, we will
+            change where the money which pays for status goes.
+          </p>
+          <p class="mt-14">
+            While projects like Shelter NFT would build a home for a family who
+            would have otherwise never had one before for the same price as a
+            designer bag, it is no replacement for a BAG. People still want to
+            buy a high end item, so instead, a brand which offers that price of
+            bag, that level of quality, whose surplus funds goes towards making
+            that positive change is perfect.
+          </p>
+        </div>
+        <!------------------------------------- Bringing End------------------------------------------ -->
+        <!-- -----------------------------------Coordination Start-------------------------------------- -->
+        <div class="mt-16 text-left underline lg:px-80 md:p-4 px-2.5">
+          <div class="text-xl font-semibold text-slate-700">
+            We have a coordination test for humanity.
+          </div>
+        </div>
+        <div class="mt-5 text-left lg:px-80 md:p-4 px-2.5">
+          <p>
+            If we have every individual with a self-interest approach we go into
+            a terrible situation. The more we convert to love for others the
+            better chance we have to pass the test.
+          </p>
+          <div
+            class="block pl-4 mt-12 -ml-px text-xl italic border-l-4 border-current text-sky-500"
+          >
+            <p class="text-black">
+              “If only we could make love what people optimize for over wealth.
+              We can help society at large realize that is the true way to win
+              the game of life” -<a
+                href="https://jackjay.io/"
+                class="underline hover:no-underline bg-gradient-to-r from-red-500 via-blue-400 to-lime-600 bg-[length:0%_2px] bg-no-repeat bg-left-bottom hover:bg-[length:100%_2px] transition-all duration-500"
+                >Jack Jay</a
+              >
+            </p>
+          </div>
+          <p class="mt-14">
+            It wasn't until our culture defined cigarettes as bad that we quit
+            them. They are just as addicting. They become negative status
+            symbols. Hopefully showing the power status has on human behavior.
+            If you thought sex/mating runs the world just wait till you realize
+            that status is above even that.
+          </p>
+          <div class="mt-14">
+            If we can change whats cool, then love can rule.
+          </div>
+          <div class="mt-12">If you are moved, then let’s move mountains.</div>
+          <div class="mt-5">
+            Schedule a call
+            <a
+              href="https://www.calendar.com/not-found/"
+              class="font-semibold underline hover:no-underline underline-offset-4 bg-gradient-to-r from-red-500 via-blue-400 hover:after:underline-offset-auto to-lime-600 bg-[length:0%_2px] bg-no-repeat bg-left-bottom hover:bg-[length:100%_2px] transition-all duration-500"
+              >HERE</a
+            >
+          </div>
+        </div>
+        <!-- ----------------------------------Coordition End---------------------------------------------- -->
+      </div>
+      <!----------------------------------------- Footer Start------------------------------------- -->
+      <div class="py-1 md:flex">
+        <div class="lg:justify-start md:justify-center lg:px-52">
+          <ul class="flex justify-center text-xs">
+            Copyright 2022
+            <span class="px-1">|</span>
+            <li>Redefine Status.</li>
+          </ul>
+        </div>
+        <div
+          class="justify-center px-48 m-2 mx-auto -ml-px bg-white dark:bg-slate-700 dark:text-white lg:px-64"
+        >
+          <div class="cursor-pointer hover:text-sky-600">
+            <a href="https://redefinestatus.com/#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 sun"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="hidden cursor-pointer display-none hover:text-sky-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 moon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- <div
+          class="justify-center flex max-w-[600px] px-40 m-2 mx-auto -ml-px bg-white dark:bg-slate-700 dark:text-white lg:px-64"
+        >
+          <img
+            class="w-8 h-8 cursor-pointer moon hover:text-sky-500"
+            src="./moon.png"
+            alt=""
+          />
+          <img
+            class="hidden w-8 h-8 cursor-pointer sun hover:sky-500"
+            src="./sun.png"
+            alt=""
+          />
+        </div> -->
+      </div>
+      <!-- ---------------------------------------------------Footer End------------------------------------------ -->
+      <!--------------------------------------------------- Git Logo Start-------------------------------------------- -->
+      <div>
+        <a
+          href="https://persistventures.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="styles_githubCorner__7QjNo"
+          aria-label="Get Your Notion LIVE!"
+        >
+          <svg
+            width="80"
+            height="80"
+            viewBox="0 0 250 250"
+            style="
+              fill: #70b7fd;
+              color: #fff;
+              position: absolute;
+              z-index: 1001;
+              top: 0;
+              right: 0;
+              border: 0;
+              transform: scale(1, 1);
+            "
+          >
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+              d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor"
+              style="transform-origin: 130px 106px"
+              class="styles_octoArm__PrtZ9"
+            ></path>
+            <path
+              d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <!------------------------------------------------------------ Git Logo ENd------------------------------------------------------------------ -->
+    </div>
+    <script src="/app.js"></script>
+  </body>
 </html>
